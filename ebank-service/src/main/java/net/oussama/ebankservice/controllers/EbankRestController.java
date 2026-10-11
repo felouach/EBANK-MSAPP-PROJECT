@@ -20,7 +20,7 @@ public class EbankRestController {
     }
     @GetMapping("/accounts/{id}")
     private BankAccount getBankAccountByTd(@PathVariable String id){
-        return ebankService.getBankAccountByTd(id);
+        return ebankService.getBankAccountById(id);
     }
     @PostMapping("/accounts")
     private BankAccount save(@RequestBody BankAccount bankAccount){
